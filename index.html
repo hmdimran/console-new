@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>AnyConnect Console</title>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        <!-- DataTables CSS -->
+        <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+        <!-- DataTables Responsive CSS -->
+        <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    </head>
+    <body>
+                <div class="header_section">
+                    <div class="header_left">
+                        <a class="text-logo" href="#"><i class="glyphicon glyphicon-asterisk"></i>AnyConnect Console</a>
+                    </div>
+                    <div class="header_right">
+                        <i class="fa fa-question-circle marginR"></i>
+                            <i class="fa fa-bell marginR"></i>
+                            <p>MD Al-Hasan Mridha <br>Software Engineer</p>
+                            <img src="./assets/img/profile.png" alt="">
+                            <a href="#"><i class="fa fa-caret-down"></i></a>
+                    </div>
+                </div>
+               <div class="menu_section">
+                   <div class="menu">
+                       <ul>
+                           <li>
+                               <a href=""><i class="fa fa-home"></i><br>DashBoard</a></li>
+                           <li>
+                               <a href=""><i class="fa fa-users"></i><br>Users</a></li>
+                           <li>
+                               <a href=""><i class="fa fa-desktop"></i><br>Devices</a></li>
+                           <li>
+                               <a href=""><i class="glyphicon glyphicon-transfer"></i><br>Connections</a></li>
+                           <li>
+                               <a href=""><i class="glyphicon glyphicon-download-alt"></i><br>Downloads</a></li>
+                           <li>
+                               <a href=""><i class="fa fa-gear"></i><br>Admin</a></li>
+                       </ul>
+                   </div>
+               </div>
+
+
+
+                <div class="row">
+                    <div class="col-lg-10">
+                        <!--<div class="panel panel-default">-->
+
+                        <!-- /.panel-heading -->
+                        <div class="navbar-header" style=" font-size: x-large" >Users</div>
+                        <!--</div>-->
+                        <!-- /.navbar-header -->
+
+                        <div class="panel-body">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2">
+
+                                <table width="100%" class="table " id="filterOption">
+
+                                    <thead>
+
+                                    <tr>
+                                        <!--<th></th>-->
+
+                                    </tr>
+
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="#products_checkbox" class="text-justify" data-toggle="collapse" style="color: black; text-decoration: none"><span class="h5" style=" font-weight: bold">Products</span> <span class="caret"  style="font-weight: bold"></span></a>
+                                            <div id="products_checkbox" class="collapse">
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" >Product 1</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" >Product 2</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox">Product 3</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" >Product 4</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" >Product 5</label>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#region_checkbox" class="text-justify" data-toggle="collapse" style="color: black; text-decoration: none"><span class="h5" style=" font-weight: bold">Region</span> <span class="caret"  style="font-weight: bold"></span></a>
+                                            <div id="region_checkbox" class="collapse">
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox">China</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" >India</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox">Japan</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" >Singapore</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox">USA</label>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#presence_checkbox" class="text-justify" data-toggle="collapse" style="color: black; text-decoration: none"><span class="h5" style=" font-weight: bold">Presence</span> <span class="caret"  style="font-weight: bold"></span></a>
+                                            <div id="presence_checkbox" class="collapse">
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox">Online</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" >Offline</label>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#another_checkbox" class="text-justify" data-toggle="collapse" style="color: black; text-decoration: none"><span class="h5" style=" font-weight: bold">Another</span> <span class="caret"  style="font-weight: bold"></span></a>
+                                            <div id="another_checkbox" class="collapse">
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox">Another 1</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" >Another 2</label>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" style="color: gray;"><u>Clear All</u></a>
+                                        </td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                            <div class="col-lg-10">
+                                <table width="100%" class="table table-hover table-bordered" id="dataTables-user">
+
+                                    <thead>
+
+                                    <tr>
+                                        <th>User Name</th>
+                                        <th>Email Address</th>
+                                        <th>Total Devices</th>
+                                        <th>Last Connection</th>
+                                        <th>Last Event</th>
+                                        <th>Region</th>
+                                    </tr>
+
+                                    </thead>
+                                    <tbody>
+                                    <tr class="even gradeA">
+                                        <td>MD Al-Hasan Mridha </td>
+                                        <td>mridha@anyconnect.com</td>
+                                        <td>110</td>
+                                        <td>Yesterday, 10:30 pm</td>
+                                        <td class="center">16 November 2018</td>
+                                        <td class="center">USA</td>
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td>David Beuchner</td>
+                                        <td>david@anyconnect.com</td>
+                                        <td>90</td>
+                                        <td class="center">16 November 2018</td>
+                                        <td>Yesterday, 10:30 pm</td>
+                                        <td class="center">Japan</td>
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td>Robel Sharma</td>
+                                        <td>robel@anyconnect.com</td>
+                                        <td>1250</td>
+                                        <td>Today, 12:19 pm</td>
+                                        <td class="center">16 November 2018</td>
+                                        <td class="center">USA</td>
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td>David Beuchner</td>
+                                        <td>david@anyconnect.com</td>
+                                        <td>90</td>
+                                        <td class="center">16 November 2018</td>
+                                        <td>Yesterday, 10:30 pm</td>
+                                        <td class="center">Japan</td>
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td>MD Al-Hasan Mridha</td>
+                                        <td>mridha@anyconnect.com</td>
+                                        <td>110</td>
+                                        <td>Yesterday, 10:30 pm</td>
+                                        <td class="center">16 November 2018</td>
+                                        <td class="center">USA</td>
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td>David Beuchner</td>
+                                        <td>david@anyconnect.com</td>
+                                        <td>90</td>
+                                        <td class="center">16 November 2018</td>
+                                        <td>Yesterday, 10:30 pm</td>
+                                        <td class="center">Japan</td>
+                                    </tr>
+
+                                </table>
+                                <!-- /.table-responsive -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+               <div class="User_list_section"></div>
+               <div class="Footer_top_section"></div>
+               <div class="Footer_section"></div>
+
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <!-- DataTables JavaScript -->
+                <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+                <script src="vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+                <script src="vendor/datatables-responsive/dataTables.responsive.js"></script>
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/bootstrap.min.js"></script>
+                <script src="assets/js/main.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#dataTables-user').DataTable({
+                            // searching: false,
+                            responsive: true,
+                            // lengthChange: false
+
+                        });
+                        // $('#filterOption').DataTable({
+                        //     searching: false,
+                        //     responsive: true,
+                        //     lengthChange: false,
+                        // });
+                        // $("#search_users").on("keyup", function() {
+                        //     var value = $(this).val().toLowerCase();
+                        //     $("#dataTables-user tr").filter(function() {
+                        //         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                        //     });
+                        // });
+                        // $('#filter_btn').click(function () {
+                        //     console.log("Button is pressed");
+                        // });
+
+                    });
+                </script>
+    </body>
+</html>
